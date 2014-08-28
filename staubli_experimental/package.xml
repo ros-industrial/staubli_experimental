@@ -1,0 +1,18 @@
+<package>
+  <name>staubli_experimental</name>
+  <version>0.1.0</version>
+  <description>Experimental packages for Staubli manipulators within ROS-Industrial (metapackage).</description>
+  <author>G.A. vd. Hoorn (TU Delft Robotics Institute)</author>
+  <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
+  <license>Apache2.0</license>
+
+  <url type="website">http://ros.org/wiki/staubli_experimental</url>
+  <url type="bugtracker">https://github.com/ros-industrial/staubli_experimental/issues</url>
+  <url type="repository">https://github.com/ros-industrial/staubli_experimental</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>
