@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+	<arg name="paused" default="false"/>
+	<arg name="gui" default="true"/>
+
+  <!-- startup simulated world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="worlds/empty.world"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="paused" value="$(arg paused)"/>
+  </include>
+  
+  <!-- send robot URDF to ROS param server,
+       and spawn robot in Gazebo, along with necessary ROS nodes -->
+  <include file="$(find staubli_rx160_gazebo)/launch/spawn_rx160.launch"/>
+  
+</launch>
