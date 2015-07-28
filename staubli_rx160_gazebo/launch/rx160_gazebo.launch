@@ -1,7 +1,12 @@
 <?xml version="1.0"?>
 <launch>
-	<arg name="paused" default="false"/>
-	<arg name="gui" default="true"/>
+  <arg name="paused" default="false"/>
+  <arg name="gui" default="true"/>
+  
+  <!-- remap topics to conform to ROS-I specifications -->
+  <remap from="arm_controller/follow_joint_trajectory" to="/joint_trajectory_action" />
+  <remap from="arm_controller/state" to="/feedback_states" />
+  <remap from="arm_controller/command" to="/joint_path_command"/>
 
   <!-- startup simulated world -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
