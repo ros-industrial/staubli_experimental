@@ -91,7 +91,7 @@
     <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="${prefix}link_5">
-    <material>Gazebo/Yellow</material>
+    <material>Gazebo/Grey</material>
     <turnGravityOff>true</turnGravityOff>
   </gazebo>
   <gazebo reference="${prefix}link_6">
