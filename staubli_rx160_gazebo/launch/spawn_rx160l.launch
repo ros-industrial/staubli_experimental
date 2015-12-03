@@ -1,11 +1,5 @@
 <?xml version="1.0"?>
 <launch>  
-
-  <!-- remap topics to conform to ROS-I specifications -->
-  <remap from="/arm_controller/follow_joint_trajectory" to="/joint_trajectory_action" />
-  <remap from="/arm_controller/state" to="/feedback_states" />
-  <remap from="/arm_controller/command" to="/joint_path_command"/>
-
   <!-- send robot urdf to ROS param server -->
   <include file="$(find staubli_rx160_gazebo)/launch/load_rx160l.launch" />
 
