@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- load the joint state controller -->
+  <rosparam file="$(find staubli_tx90_gazebo)/config/joint_state_controller.yaml" command="load" />
+  <node name="joint_state_controller_spawner" pkg="controller_manager" type="spawner" args="joint_state_controller --shutdown-timeout 1" />
+
+  <!-- load the arm controller -->
+  <rosparam file="$(find staubli_tx90_gazebo)/config/tx90_arm_controller.yaml" command="load" />
+  <node name="staubli_tx90_controller_spawner" pkg="controller_manager" type="spawner" args="arm_controller --shutdown-timeout 1" />
+</launch>
