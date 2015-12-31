@@ -12,6 +12,9 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
+  <run_depend>staubli_tx90_gazebo</run_depend>
+  <run_depend>staubli_tx90_support</run_depend>
+
   <export>
     <metapackage/>
   </export>
