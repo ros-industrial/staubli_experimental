@@ -8,14 +8,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx90_support/meshes/tx90l/visual/base_link.stl"/>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90/visual/base_link.stl"/>
         </geometry>
         <xacro:material_staubli_ral_melon_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx90_support/meshes/tx90l/collision/base_link.stl"/>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90/collision/base_link.stl"/>
         </geometry>
       </collision>
       <inertial>
@@ -30,14 +30,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx90_support/meshes/tx90l/visual/link_1.stl"/>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90/visual/link_1.stl"/>
         </geometry>
         <xacro:material_staubli_ral_melon_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx90_support/meshes/tx90l/collision/link_1.stl"/>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90/collision/link_1.stl"/>
         </geometry>
       </collision>
       <inertial>
@@ -74,14 +74,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx90_support/meshes/tx90l/visual/link_3.stl"/>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90/visual/link_3.stl"/>
         </geometry>
         <xacro:material_staubli_ral_melon_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx90_support/meshes/tx90l/collision/link_3.stl"/>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90/collision/link_3.stl"/>
         </geometry>
       </collision>
       <inertial>
@@ -118,14 +118,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx90_support/meshes/tx90l/visual/link_5.stl"/>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90/visual/link_5.stl"/>
         </geometry>
         <xacro:material_staubli_ral_grey_aluminium />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx90_support/meshes/tx90l/collision/link_5.stl"/>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90/collision/link_5.stl"/>
         </geometry>
       </collision>
       <inertial>
@@ -140,14 +140,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx90_support/meshes/tx90l/visual/link_6.stl"/>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90/visual/link_6.stl"/>
         </geometry>
         <xacro:material_staubli_ral_grey_aluminium />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx90_support/meshes/tx90l/collision/link_6.stl"/>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90/collision/link_6.stl"/>
         </geometry>
       </collision>
       <inertial>
