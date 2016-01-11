@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<package>
+  <name>staubli_tx90_support</name>
+  <version>0.1.0</version>
+  <description>
+    <p>
+      ROS-Industrial support for the Staubli TX90 (and variants).
+    </p>
+    <p>
+      This package contains configuration data, 3D models and launch files
+      for Staubli TX90 manipulators. This includes the base model,
+      as well as models with extended arm and forearm links.
+    </p>
+    <p><b>Specifications</b>:</p>
+    <ul>
+      <li>TX90 - Standard Arm - Nominal Speed</li>
+      <li>TX90L - Long Arm - Nominal Speed</li>
+      <li>TX90XL - Extra Long Arm - Nominal Speed</li>
+    </ul>
+    <p>
+      Joint limits, torque limits, and maximum joint velocities are based on the
+      information in the <em>Staubli Robotics - TX series 90 family -
+      Instruction Manual</em> version <em>D28082904C – 01/12/2014</em>.
+      All urdfs are based on the default motion and joint velocity limits,
+      unless noted otherwise (ie: no support for high speed joints, extended /
+      limited motion ranges or other options).
+    </p>
+    <p>
+      Before using any of the configuration files and / or meshes included
+      in this package, be sure to check they are correct for the particular
+      robot model and configuration you intend to use them with.
+    </p>
+    <p>
+      <b>NB (1)</b>: Masses, center of mass and moments of inertia were calculated
+      using Solidworks and the official Staubli CAD models, and may not be
+      accurate.
+    </p>
+    <p>
+      <b>NB (2)</b>: In order to allow maximum torque on axis 6, effort limit on
+      axis 5 was set to 29 Nm, rather than a feasible 58 Nm if torque on
+      axis 6 = 0 Nm (see superscripts (1) and (2) from table in Section 2.6.2
+      -Torque Limits- of the instruction manual for details).
+    </p>
+    <p><b>Contributors</b>:</p>
+    <p>
+      This support package has received contributions from: Panagiotis 
+      Sotiropoulos (Ocado Technology) (TX90/TX90L/TX90XL).
+    </p>
+  </description>
+  <author>Murilo Martins (Ocado Technology)</author>
+  <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
+  <license>Apache2.0</license>
+
+  <url type="website">http://ros.org/wiki/staubli_tx90_support</url>
+  <url type="bugtracker">https://github.com/ros-industrial/staubli/issues</url>
+  <url type="repository">https://github.com/ros-industrial/staubli</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roslaunch</build_depend>
+
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>joint_state_publisher</run_depend>
+  <run_depend>rviz</run_depend>
+  <run_depend>xacro</run_depend>
+  <run_depend>staubli_resources</run_depend>
+
+  <export>
+    <architecture_independent />
+  </export>
+</package>
