@@ -12,6 +12,7 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
+  <run_depend>staubli_rx160_support</run_depend>
   <run_depend>staubli_rx160_gazebo</run_depend>
 
   <export>
