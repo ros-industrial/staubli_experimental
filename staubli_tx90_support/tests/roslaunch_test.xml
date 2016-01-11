@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<launch>
+  <group ns="load_tx90__">
+    <include file="$(find staubli_tx90_support)/launch/load_tx90.launch"/>
+  </group>
+
+  <group ns="test_tx90__">
+    <include file="$(find staubli_tx90_support)/launch/test_tx90.launch"/>
+  </group>
+
+  <group ns="load_tx90l__">
+    <include file="$(find staubli_tx90_support)/launch/load_tx90l.launch"/>
+  </group>
+
+  <group ns="test_tx90l__">
+    <include file="$(find staubli_tx90_support)/launch/test_tx90l.launch"/>
+  </group>
+  
+  <group ns="load_tx90xl__">
+    <include file="$(find staubli_tx90_support)/launch/load_tx90xl.launch"/>
+  </group>
+
+  <group ns="test_tx90xl__">
+    <include file="$(find staubli_tx90_support)/launch/test_tx90xl.launch"/>
+  </group>
+</launch>
