@@ -1,0 +1,40 @@
+<package>
+  <name>staubli_tx90_gazebo</name>
+  <version>0.0.1</version>
+  <description>
+    <p>
+      ROS-Industrial Gazebo support package for the Staubli TX90 (and variants).
+    </p>
+    <p>
+      This package contains the configuration data and launch files required
+      to simulate the Staubli TX90 manipulator in Gazebo. This includes the base
+      model, the TX90L and the TX90XL.
+    </p>
+    <p>
+      Before using any of the configuration files included in this package, be
+      sure to check they are correct for the particular robot model and
+      configuration you intend to use them with.
+    </p>
+  </description>
+  <author email="murilo.martins@ocado.com">Murilo Martins (Ocado Technology)</author>
+  <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
+  <license>Apache2.0</license>
+
+  <url type="website">http://wiki.ros.org/staubli_experimental</url>
+  <url type="bugtracker">https://github.com/ros-industrial/staubli_experimental/issues</url>
+  <url type="repository">https://github.com/ros-industrial/staubli_experimental</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>staubli_resources</run_depend>
+  <run_depend>staubli_tx90_support</run_depend>
+  <run_depend>gazebo</run_depend>
+  <run_depend>gazebo_ros</run_depend>
+  <run_depend>gazebo_ros_control</run_depend>
+  <run_depend>gazebo_ros_pkgs</run_depend>
+  <run_depend>joint_state_controller</run_depend>
+  <run_depend>position_controllers</run_depend>
+  <run_depend>joint_trajectory_controller</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>ros_controllers</run_depend>
+</package>
