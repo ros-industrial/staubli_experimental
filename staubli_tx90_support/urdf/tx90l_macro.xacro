@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find staubli_resources)/urdf/common_materials.xacro"/>
+
+  <xacro:macro name="staubli_tx90l" params="prefix">
+    <!-- links -->
+    <link name="${prefix}base_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90/visual/base_link.stl"/>
+        </geometry>
+        <xacro:material_staubli_ral_melon_yellow />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90/collision/base_link.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+          <mass value="10.733459"/>
+          <origin xyz="0.014288 0.000001 0.122264" rpy="0.0 0.0 0.0"/>
+          <inertia ixx="0.096590" ixy="-0.000005" ixz="-0.003803"
+                                  iyy="0.087591"  iyz="-0.000001"
+                                                  izz="0.081632"/>
+      </inertial>
+    </link>
+    <link name="${prefix}link_1">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90/visual/link_1.stl"/>
+        </geometry>
+        <xacro:material_staubli_ral_melon_yellow />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90/collision/link_1.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+          <mass value="16.934564"/>
+          <origin xyz="0.019143 0.024764 -0.064596" rpy="0.0 0.0 0.0"/>
+          <inertia ixx="0.222318" ixy="0.016499" ixz="0.023794"
+                                  iyy="0.208959" iyz="0.031663"
+                                                 izz="0.157081"/>
+      </inertial>
+    </link>
+    <link name="${prefix}link_2">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90l/visual/link_2.stl"/>
+        </geometry>
+        <xacro:material_staubli_ral_melon_yellow />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90l/collision/link_2.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+          <mass value="14.350897"/>
+          <origin xyz="-0.000007 0.221192 0.206856" rpy="0.0 0.0 0.0"/>
+          <inertia ixx="0.595207" ixy="0.000005" ixz="-0.000008"
+                                       iyy="0.625683" iyz="-0.003766"
+                                                           izz="0.059863"/>
+      </inertial>
+    </link>
+    <link name="${prefix}link_3">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90/visual/link_3.stl"/>
+        </geometry>
+        <xacro:material_staubli_ral_melon_yellow />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90/collision/link_3.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+          <mass value="7.501506"/>
+          <origin xyz="0.000002 0.065008 -0.071428" rpy="0.0 0.0 0.0"/>
+          <inertia ixx="0.058902" ixy="0.000000" ixz="0.000001"
+                                  iyy="0.056884" iyz="-0.003672"
+                                                 izz="0.034271"/>
+      </inertial>
+    </link>
+    <link name="${prefix}link_4">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90l/visual/link_4.stl"/>
+        </geometry>
+        <xacro:material_staubli_ral_melon_yellow />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90l/collision/link_4.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+          <mass value="6.420429"/>
+          <origin xyz="-0.001998 0.049992 0.360301" rpy="0.0 0.0 0.0"/>
+          <inertia ixx="0.103999" ixy="0.000003" ixz="-0.001379"
+                                  iyy="0.098782" iyz="-0.000007"
+                                                 izz="0.019071"/>
+      </inertial>
+    </link>
+    <link name="${prefix}link_5">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90/visual/link_5.stl"/>
+        </geometry>
+        <xacro:material_staubli_ral_grey_aluminium />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90/collision/link_5.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+          <mass value="0.568760"/>
+          <origin xyz="0.000000 0.049931 0.022823" rpy="0.0 0.0 0.0"/>
+          <inertia ixx="0.001084" ixy="0.000000" ixz="0.000000"
+                                  iyy="0.001123" iyz="0.000001"
+                                                 izz="0.000383"/>
+      </inertial>
+    </link>
+    <link name="${prefix}link_6">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90/visual/link_6.stl"/>
+        </geometry>
+        <xacro:material_staubli_ral_grey_aluminium />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx90_support/meshes/tx90/collision/link_6.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+          <mass value="0.030977"/>
+          <origin xyz="-0.000243 0.050000 -0.206293" rpy="0.0 0.0 0.0"/>
+          <inertia ixx="0.000012" ixy="-0.000000" ixz="0.000000"
+                                  iyy="0.000011"  iyz="0.000000"
+                                                  izz="0.000022"/>
+      </inertial>
+    </link>
+    <link name="${prefix}tool0"/>
+
+    <!-- joints -->
+    <joint name="${prefix}joint_1" type="revolute">
+      <origin xyz="0 0 0.478" rpy="0 0 0"/>
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}link_1"/>
+      <axis xyz="0 0 1"/>
+      <!-- from Staubli instruction manual:
+      (1) effort limit = 318 Nm if floor mounted
+      (2) effort limit = 111 Nm if wall mounted -->
+      <limit lower="-3.14159" upper="3.14159" effort="318.0" velocity="3.75" />
+      <dynamics damping="0.0" friction="0.0"/>
+    </joint>
+    <joint name="${prefix}joint_2" type="revolute">
+      <origin xyz="0.050 0 0" rpy="0 0 0"/>
+      <parent link="${prefix}link_1"/>
+      <child link="${prefix}link_2"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="-2.268928" upper="2.574360" effort="130.0" velocity="2.97" />
+      <dynamics damping="0.0" friction="0.0"/>
+    </joint>
+    <joint name="${prefix}joint_3" type="revolute">
+      <origin xyz="0 0.05 0.500" rpy="0 0 0"/>
+      <parent link="${prefix}link_2"/>
+      <child link="${prefix}link_3"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="-2.530727" upper="2.530727" effort="65.0" velocity="4.45" />
+      <dynamics damping="0.0" friction="0.0"/>
+    </joint>
+    <joint name="${prefix}joint_4" type="revolute">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="${prefix}link_3"/>
+      <child link="${prefix}link_4"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="-4.712389" upper="4.712389" effort="34.0" velocity="7.50" />
+      <dynamics damping="0.0" friction="0.0"/>
+    </joint>
+    <joint name="${prefix}joint_5" type="revolute">
+      <origin xyz="0 0 0.550" rpy="0 0 0"/>
+      <parent link="${prefix}link_4"/>
+      <child link="${prefix}link_5"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="-2.007129" upper="2.443461" effort="29.0" velocity="6.11" />
+      <dynamics damping="0.0" friction="0.0"/>
+    </joint>
+    <joint name="${prefix}joint_6" type="revolute">
+      <origin xyz="0 0 0.100" rpy="0 0 0"/>
+      <parent link="${prefix}link_5"/>
+      <child link="${prefix}link_6"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="-4.712389" upper="4.712389" effort="11.0" velocity="10.47" />
+      <dynamics damping="0.0" friction="0.0"/>
+    </joint>
+    <joint name="${prefix}joint_6-tool0" type="fixed">
+      <parent link="${prefix}link_6"/>
+      <child link="${prefix}tool0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+  </xacro:macro>
+</robot>
