@@ -28,7 +28,7 @@ contents of the `val3_driver` folder to the controller itself.
 Clone branch `val3_server-devel` of [staubli_experimental](https://github.com/ros-industrial/staubli_experimental):
 
 ```shell
-git clone https://github.com/ros-industrial/staubli_experimental -b val3_server-devel
+git clone https://github.com/ros-industrial/staubli_experimental -b indigo-devel
 ```
 
 ### Transfer driver to Staubli CS8 controller
