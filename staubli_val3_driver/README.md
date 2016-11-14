@@ -25,10 +25,10 @@ contents of the `val3_driver` folder to the controller itself.
 
 ### Clone this repository
 
-Clone branch `val3_server-devel` of [staubli_experimental](https://github.com/ocadotechnology/staubli_experimental):
+Clone branch `val3_server-devel` of [staubli_experimental](https://github.com/ros-industrial/staubli_experimental):
 
 ```shell
-git clone https://github.com/ocadotechnology/staubli_experimental -b val3_server-devel
+git clone https://github.com/ros-industrial/staubli_experimental -b val3_server-devel
 ```
 
 ### Transfer driver to Staubli CS8 controller
