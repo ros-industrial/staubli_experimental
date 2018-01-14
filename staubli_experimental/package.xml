@@ -15,8 +15,10 @@
   <run_depend>staubli_rx160_gazebo</run_depend>
   <run_depend>staubli_tx90_gazebo</run_depend>
   <run_depend>staubli_tx90_support</run_depend>
+  <run_depend>staubli_val3_driver</run_depend>
 
   <export>
     <metapackage/>
+    <architecture_independent/>
   </export>
 </package>
