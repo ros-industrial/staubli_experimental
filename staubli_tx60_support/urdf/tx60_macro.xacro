@@ -109,9 +109,6 @@
         </geometry>
       </collision>
     </link>
-    
-
-<!--LATER <link name="${prefix}tool0"/>-->
 
     <!-- joints: main serial chain -->
     <joint name="${prefix}joint_1" type="revolute">
@@ -165,12 +162,30 @@
       <limit lower="${radians(-270.0)}" upper="${radians(270.0)}" effort="0.0" velocity="${radians(1445)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
-    <joint name="${prefix}joint_6-tool0" type="fixed">
-      <parent link="${prefix}link_6"/>
-      <child link="${prefix}tool0"/>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+
+    <!-- ROS-Industrial 'base' frame: base_link to Fanuc World Coordinates transform -->
+    <link name="${prefix}base" />
+    <joint name="${prefix}base_link-base" type="fixed">
+      <origin xyz="0 0 0.650" rpy="0 0 0"/>
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}base"/>
     </joint>
 
+    <!-- ROS-Industrial 'flange' frame: attachment point for EEF models -->
+    <link name="${prefix}flange" />
+    <joint name="${prefix}joint_6-flange" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <parent link="${prefix}link_6" />
+      <child link="${prefix}flange" />
+    </joint>
 
+    <!-- ROS-Industrial 'tool0' frame: all-zeros tool frame -->
+    <link name="${prefix}tool0" />
+    <joint name="${prefix}link_6-tool0" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <parent link="${prefix}link_6" />
+      <child link="${prefix}tool0" />
+    </joint>
+	
   </xacro:macro>
 </robot>
