@@ -112,7 +112,7 @@
 
     <!-- joints: main serial chain -->
     <joint name="${prefix}joint_1" type="revolute">
-      <origin xyz="0 0 0.478" rpy="0 0 0"/>
+      <origin xyz="0 0 0.375" rpy="0 0 0"/>
       <parent link="${prefix}base_link"/>
       <child link="${prefix}link_1"/>
       <axis xyz="0 0 1"/>
@@ -123,7 +123,7 @@
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_2" type="revolute">
-      <origin xyz="0.050 0 0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <parent link="${prefix}link_1"/>
       <child link="${prefix}link_2"/>
       <axis xyz="0 1 0"/>
@@ -131,7 +131,7 @@
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_3" type="revolute">
-      <origin xyz="0 0.05 0.425" rpy="0 0 0"/>
+      <origin xyz="0 0.02 0.40" rpy="0 0 0"/>
       <parent link="${prefix}link_2"/>
       <child link="${prefix}link_3"/>
       <axis xyz="0 1 0"/>
@@ -147,7 +147,7 @@
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_5" type="revolute">
-      <origin xyz="0 0 0.425" rpy="0 0 0"/>
+      <origin xyz="0 0 0.45" rpy="0 0 0"/>
       <parent link="${prefix}link_4"/>
       <child link="${prefix}link_5"/>
       <axis xyz="0 1 0"/>
@@ -155,7 +155,7 @@
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_6" type="revolute">
-      <origin xyz="0 0 0.100" rpy="0 0 0"/>
+      <origin xyz="0 0 0.07" rpy="0 0 0"/>
       <parent link="${prefix}link_5"/>
       <child link="${prefix}link_6"/>
       <axis xyz="0 0 1"/>
