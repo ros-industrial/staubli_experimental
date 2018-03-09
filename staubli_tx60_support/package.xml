@@ -8,13 +8,13 @@
     </p>
     <p>
       This package contains configuration data, 3D models and launch files
-      for Staubli TX90 manipulators. This includes the base model,
-      as well as models with extended arm and forearm links.
+      for Staubli TX60 manipulators. This includes the base model,
+      as well a model with extended arm and forearm links.
     </p>
     <p><b>Specifications</b>:</p>
     <ul>
-      <li>TX90 - Standard Arm - Nominal Speed</li>
-      <li>TX90L - Long Arm - Nominal Speed</li>
+      <li>TX60 - Standard Arm - Nominal Speed</li>
+      <li>TX60L - Long Arm - Nominal Speed</li>
     </ul>
     <p>
       Joint limits, torque limits, and maximum joint velocities are based on the
@@ -42,15 +42,14 @@
     </p>
     <p><b>Contributors</b>:</p>
     <p>
-      This support package has received contributions from: Nils Melchert
-      Sotiropoulos (Ocado Technology) (TX60/TX60L).
+      This support package has received contributions from: Nils Melchert (Leibniz University Hannover) (TX60/TX60L).
     </p>
   </description>
   <author>Nils Melchert (Leibniz University Hannover)</author>
   <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
   <license>Apache2.0</license>
 
-  <url type="website">http://ros.org/wiki/staubli_tx90_support</url>
+  <url type="website">http://ros.org/wiki/staubli_tx60_support</url>
   <url type="bugtracker">https://github.com/ros-industrial/staubli_experimental/issues</url>
   <url type="repository">https://github.com/ros-industrial/staubli_experimental</url>
 
