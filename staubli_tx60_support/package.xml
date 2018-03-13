@@ -19,7 +19,7 @@
     <p>
       Joint limits, torque limits, and maximum joint velocities are based on the
       information in the <em>Staubli Robotics - TX series 60 family -
-      Instruction Manual</em> version <em>D28082904C – 01/12/2014</em>.
+      Instruction Manual</em> version <em>D28082802D – 01/12/2016</em>.
       All urdfs are based on the default motion and joint velocity limits,
       unless noted otherwise (ie: no support for high speed joints, extended /
       limited motion ranges or other options).
