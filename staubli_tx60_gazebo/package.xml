@@ -7,7 +7,7 @@
     </p>
     <p>
       This package contains the configuration data and launch files required
-      to simulate the Staubli TX60 manipulator in Gazebo. This includes the TX60 and the TX60L.
+      to simulate the Staubli TX60 and the Staubli TX60L manipulator in Gazebo.
     </p>
     <p>
       Before using any of the configuration files included in this package, be
