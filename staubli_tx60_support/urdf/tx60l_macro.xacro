@@ -8,14 +8,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx60_support/meshes/tx60l/visual/base_link.stl"/>
+          <mesh filename="package://staubli_tx60_support/meshes/tx60/visual/base_link.stl"/>
         </geometry>
         <xacro:material_staubli_ral_melon_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx60_support/meshes/tx60l/collision/base_link.stl"/>
+          <mesh filename="package://staubli_tx60_support/meshes/tx60/collision/base_link.stl"/>
         </geometry>
       </collision>
       <inertial>
@@ -30,14 +30,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx60_support/meshes/tx60l/visual/link_1.stl"/>
+          <mesh filename="package://staubli_tx60_support/meshes/tx60/visual/link_1.stl"/>
         </geometry>
         <xacro:material_staubli_ral_melon_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx60_support/meshes/tx60l/collision/link_1.stl"/>
+          <mesh filename="package://staubli_tx60_support/meshes/tx60/collision/link_1.stl"/>
         </geometry>
       </collision>
       <inertial>
@@ -74,14 +74,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx60_support/meshes/tx60l/visual/link_3.stl"/>
+          <mesh filename="package://staubli_tx60_support/meshes/tx60/visual/link_3.stl"/>
         </geometry>
         <xacro:material_staubli_ral_melon_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx60_support/meshes/tx60l/collision/link_3.stl"/>
+          <mesh filename="package://staubli_tx60_support/meshes/tx60/collision/link_3.stl"/>
         </geometry>
       </collision>
       <inertial>
@@ -118,14 +118,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx60_support/meshes/tx60l/visual/link_5.stl"/>
+          <mesh filename="package://staubli_tx60_support/meshes/tx60/visual/link_5.stl"/>
         </geometry>
         <xacro:material_staubli_ral_grey_aluminium />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx60_support/meshes/tx60l/collision/link_5.stl"/>
+          <mesh filename="package://staubli_tx60_support/meshes/tx60/collision/link_5.stl"/>
         </geometry>
       </collision>
       <inertial>
@@ -140,14 +140,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx60_support/meshes/tx60l/visual/link_6.stl"/>
+          <mesh filename="package://staubli_tx60_support/meshes/tx60/visual/link_6.stl"/>
         </geometry>
         <xacro:material_staubli_ral_grey_aluminium />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx60_support/meshes/tx60l/collision/link_6.stl"/>
+          <mesh filename="package://staubli_tx60_support/meshes/tx60/collision/link_6.stl"/>
         </geometry>
       </collision>
       <inertial>
@@ -166,33 +166,33 @@
       <child link="${prefix}link_1"/>
       <axis xyz="0 0 1"/>
       <!-- from Staubli instruction manual:
-      (1) effort limit = 318 Nm if floor mounted
-      (2) effort limit = 111 Nm if wall mounted -->
-      <limit lower="${radians(-180)}" upper="${radians(180)}" effort="0.0" velocity="${radians(435)}" />
+      (1) effort limit = 126 Nm if floor mounted
+      (2) effort limit = 40 Nm if wall mounted -->
+      <limit lower="${radians(-180)}" upper="${radians(180)}" effort="126.0" velocity="${radians(435)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_2" type="revolute">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0 0.2175 0" rpy="0 0 0"/>
       <parent link="${prefix}link_1"/>
       <child link="${prefix}link_2"/>
       <axis xyz="0 1 0"/>
-      <limit lower="${radians(-127.5)}" upper="${radians(127.5)}" effort="0.0" velocity="${radians(385)}" />
+      <limit lower="${radians(-127.5)}" upper="${radians(127.5)}" effort="47.0" velocity="${radians(385)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_3" type="revolute">
-      <origin xyz="0 0.02 0.40" rpy="0 0 0"/>
+      <origin xyz="0 0 0.40" rpy="0 0 0"/>
       <parent link="${prefix}link_2"/>
       <child link="${prefix}link_3"/>
       <axis xyz="0 1 0"/>
-      <limit lower="${radians(-152.5)}" upper="${radians(152.5)}" effort="0.0" velocity="${radians(500)}" />
+      <limit lower="${radians(-152.5)}" upper="${radians(152.5)}" effort="32.0" velocity="${radians(500)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_4" type="revolute">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0 -0.1975 0" rpy="0 0 0"/>
       <parent link="${prefix}link_3"/>
       <child link="${prefix}link_4"/>
       <axis xyz="0 0 1"/>
-      <limit lower="${radians(-270.0)}" upper="${radians(270.0)}" effort="0.0" velocity="${radians(995)}" />
+      <limit lower="${radians(-270.0)}" upper="${radians(270.0)}" effort="7.0" velocity="${radians(995)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_5" type="revolute">
@@ -200,7 +200,7 @@
       <parent link="${prefix}link_4"/>
       <child link="${prefix}link_5"/>
       <axis xyz="0 1 0"/>
-      <limit lower="${radians(-122.5)}" upper="${radians(132.5)}" effort="0.0" velocity="${radians(1065)}" />
+      <limit lower="${radians(-122.5)}" upper="${radians(132.5)}" effort="8.0" velocity="${radians(1065)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_6" type="revolute">
@@ -208,14 +208,14 @@
       <parent link="${prefix}link_5"/>
       <child link="${prefix}link_6"/>
       <axis xyz="0 0 1"/>
-      <limit lower="${radians(-270.0)}" upper="${radians(270.0)}" effort="0.0" velocity="${radians(1445)}" />
+      <limit lower="${radians(-270.0)}" upper="${radians(270.0)}" effort="2.0" velocity="${radians(1445)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
 
     <!-- ROS-Industrial 'base' frame: base_link to Fanuc World Coordinates transform -->
     <link name="${prefix}base" />
     <joint name="${prefix}base_link-base" type="fixed">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0 0 0.375" rpy="0 0 0"/>
       <parent link="${prefix}base_link"/>
       <child link="${prefix}base"/>
     </joint>
