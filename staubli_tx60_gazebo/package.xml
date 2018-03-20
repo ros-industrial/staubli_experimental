@@ -1,6 +1,7 @@
+<?xml version="1.0"?>
 <package>
   <name>staubli_tx60_gazebo</name>
-  <version>0.0.1</version>
+  <version>0.1.0</version>
   <description>
     <p>
       ROS-Industrial Gazebo support package for the Staubli TX60 (and variants).
@@ -35,7 +36,7 @@
   <run_depend>robot_state_publisher</run_depend>
   <run_depend>staubli_resources</run_depend>
   <run_depend>staubli_tx60_support</run_depend>
-  
+
   <export>
     <architecture_independent />
   </export>

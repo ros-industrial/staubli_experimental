@@ -105,7 +105,6 @@
       <robotNamespace>/${prefix}</robotNamespace>
       <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
     </plugin>
-  </gazebo>  
-
+  </gazebo>
   </xacro:macro>
 </robot>

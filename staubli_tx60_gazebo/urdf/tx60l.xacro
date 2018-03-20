@@ -2,7 +2,7 @@
 <robot name="staubli_tx60l_gazebo" xmlns:xacro="http://wiki.ros.org/xacro">
   <!-- TX60L -->
   <xacro:include filename="$(find staubli_tx60_gazebo)/urdf/tx60l_macro.xacro"/>	
-  
+
   <xacro:staubli_tx60l_robot prefix=""/>
 
   <!-- Fix robot to Gazebo world -->
