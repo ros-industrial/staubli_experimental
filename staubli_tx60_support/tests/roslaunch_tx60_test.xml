@@ -7,5 +7,4 @@
   <group ns="test_tx60__">
     <include file="$(find staubli_tx60_support)/launch/test_tx60.launch"/>
   </group>
-  
 </launch>
