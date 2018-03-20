@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<robot name="staubli_tx60l_gazebo" xmlns:xacro="http://wiki.ros.org/xacro">
+  <!-- TX60L -->
+  <xacro:include filename="$(find staubli_tx60_gazebo)/urdf/tx60l_macro.xacro"/>	
+
+  <xacro:staubli_tx60l_robot prefix=""/>
+
+  <!-- Fix robot to Gazebo world -->
+  <link name="world"/>
+  <joint name="world-base_link-fixed" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+  </joint>
+</robot>
