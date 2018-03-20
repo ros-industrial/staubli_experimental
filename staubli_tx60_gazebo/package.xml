@@ -15,7 +15,7 @@
       configuration you intend to use them with.
     </p>
   </description>
-  <author email="nils.melchert@imr.uni-hannover.de">Nils Melchert (Leibniz University Hannover)</author>
+  <author>Nils Melchert (Leibniz University Hannover)</author>
   <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
   <license>Apache2.0</license>
 
