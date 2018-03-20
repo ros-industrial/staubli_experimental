@@ -212,7 +212,7 @@
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
 
-    <!-- ROS-Industrial 'base' frame: base_link to Fanuc World Coordinates transform -->
+    <!-- ROS-Industrial 'base' frame: base_link to Staubli World Coordinates transform -->
     <link name="${prefix}base" />
     <joint name="${prefix}base_link-base" type="fixed">
       <origin xyz="0 0 0.375" rpy="0 0 0"/>
@@ -235,6 +235,5 @@
       <parent link="${prefix}flange" />
       <child link="${prefix}tool0" />
     </joint>
-	
   </xacro:macro>
 </robot>
