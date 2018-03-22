@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://ros.org/wiki/xacro">
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
 <xacro:include filename="$(find staubli_rx160_support)/urdf/rx160l_macro.xacro"/>
 <xacro:macro name="staubli_rx160l_robot" params="prefix">
 
@@ -11,7 +11,7 @@
     <robotNamespace>/${prefix}</robotNamespace>
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="${prefix}joint_1">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     </joint>
     <actuator name="${prefix}motor1">
       <mechanicalReduction>1</mechanicalReduction>
@@ -21,7 +21,7 @@
     <robotNamespace>/${prefix}</robotNamespace>
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="${prefix}joint_2">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     </joint>
     <actuator name="${prefix}motor2">
       <mechanicalReduction>1</mechanicalReduction>
@@ -31,7 +31,7 @@
     <robotNamespace>/${prefix}</robotNamespace>
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="${prefix}joint_3">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     </joint>
     <actuator name="${prefix}motor3">
       <mechanicalReduction>1</mechanicalReduction>
@@ -41,7 +41,7 @@
     <robotNamespace>/${prefix}</robotNamespace>
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="${prefix}joint_4">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     </joint>
     <actuator name="${prefix}motor4">
       <mechanicalReduction>1</mechanicalReduction>
@@ -51,7 +51,7 @@
     <robotNamespace>/${prefix}</robotNamespace>
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="${prefix}joint_5">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     </joint>
     <actuator name="${prefix}motor5">
       <mechanicalReduction>1</mechanicalReduction>
@@ -61,7 +61,7 @@
     <robotNamespace>/${prefix}</robotNamespace>
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="${prefix}joint_6">
-      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
     </joint>
     <actuator name="${prefix}motor6">
       <mechanicalReduction>1</mechanicalReduction>
