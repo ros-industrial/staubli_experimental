@@ -11,7 +11,7 @@
     <robotNamespace>/${prefix}</robotNamespace>
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="${prefix}joint_1">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
     </joint>
     <actuator name="${prefix}motor1">
       <mechanicalReduction>1</mechanicalReduction>
@@ -21,7 +21,7 @@
     <robotNamespace>/${prefix}</robotNamespace>
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="${prefix}joint_2">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
     </joint>
     <actuator name="${prefix}motor2">
       <mechanicalReduction>1</mechanicalReduction>
@@ -31,7 +31,7 @@
     <robotNamespace>/${prefix}</robotNamespace>
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="${prefix}joint_3">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
     </joint>
     <actuator name="${prefix}motor3">
       <mechanicalReduction>1</mechanicalReduction>
@@ -41,7 +41,7 @@
     <robotNamespace>/${prefix}</robotNamespace>
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="${prefix}joint_4">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
     </joint>
     <actuator name="${prefix}motor4">
       <mechanicalReduction>1</mechanicalReduction>
@@ -51,7 +51,7 @@
     <robotNamespace>/${prefix}</robotNamespace>
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="${prefix}joint_5">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
     </joint>
     <actuator name="${prefix}motor5">
       <mechanicalReduction>1</mechanicalReduction>
@@ -61,7 +61,7 @@
     <robotNamespace>/${prefix}</robotNamespace>
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="${prefix}joint_6">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
     </joint>
     <actuator name="${prefix}motor6">
       <mechanicalReduction>1</mechanicalReduction>
