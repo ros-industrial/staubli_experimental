@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<robot name="staubli_tx90_gazebo" xmlns:xacro="http://ros.org/wiki/xacro">
+<robot name="staubli_tx90_gazebo" xmlns:xacro="http://wiki.ros.org/xacro">
   <!-- TX90 -->
   <xacro:include filename="$(find staubli_tx90_gazebo)/urdf/tx90_macro.xacro"/>	
   

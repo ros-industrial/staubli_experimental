@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<robot name="staubli_rx160l_gazebo" xmlns:xacro="http://ros.org/wiki/xacro">
+<robot name="staubli_rx160l_gazebo" xmlns:xacro="http://wiki.ros.org/xacro">
   <!-- RX160L -->
   <xacro:include filename="$(find staubli_rx160_gazebo)/urdf/rx160l_macro.xacro"/>
   

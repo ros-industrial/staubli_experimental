@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://ros.org/wiki/xacro">
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
   <xacro:include filename="$(find staubli_resources)/urdf/common_materials.xacro"/>
 
   <xacro:macro name="staubli_tx90xl" params="prefix">
-    <!-- links -->
+    <!-- links: main serial chain -->
     <link name="${prefix}base_link">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -158,9 +158,8 @@
                                                  izz="0.000022"/>
       </inertial>
     </link>
-    <link name="${prefix}tool0"/>
 
-    <!-- joints -->
+    <!-- joints: main serial chain -->
     <joint name="${prefix}joint_1" type="revolute">
       <origin xyz="0 0 0.478" rpy="0 0 0"/>
       <parent link="${prefix}base_link"/>
@@ -169,7 +168,7 @@
       <!-- from Staubli instruction manual:
       (1) effort limit = 318 Nm if floor mounted
       (2) effort limit = 111 Nm if wall mounted -->
-      <limit lower="-3.14159" upper="3.14159" effort="318.0" velocity="3.32" />
+      <limit lower="${radians(-180)}" upper="${radians(180)}" effort="318.0" velocity="${radians(400)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_2" type="revolute">
@@ -177,7 +176,7 @@
       <parent link="${prefix}link_1"/>
       <child link="${prefix}link_2"/>
       <axis xyz="0 1 0"/>
-      <limit lower="-2.268928" upper="2.574360" effort="90.0" velocity="2.79" />
+      <limit lower="${radians(-130)}" upper="${radians(147.5)}" effort="90.0" velocity="${radians(350)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_3" type="revolute">
@@ -185,7 +184,7 @@
       <parent link="${prefix}link_2"/>
       <child link="${prefix}link_3"/>
       <axis xyz="0 1 0"/>
-      <limit lower="-2.530727" upper="2.530727" effort="53.0" velocity="4.01" />
+      <limit lower="${radians(-145)}" upper="${radians(145)}" effort="53.0" velocity="${radians(410)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_4" type="revolute">
@@ -193,7 +192,7 @@
       <parent link="${prefix}link_3"/>
       <child link="${prefix}link_4"/>
       <axis xyz="0 0 1"/>
-      <limit lower="-4.712389" upper="4.712389" effort="34.0" velocity="6.98" />
+      <limit lower="${radians(-270)}" upper="${radians(270)}" effort="34.0" velocity="${radians(540)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_5" type="revolute">
@@ -201,7 +200,7 @@
       <parent link="${prefix}link_4"/>
       <child link="${prefix}link_5"/>
       <axis xyz="0 1 0"/>
-      <limit lower="-2.007129" upper="2.443461" effort="29.0" velocity="6.02" />
+      <limit lower="${radians(-115)}" upper="${radians(140)}" effort="29.0" velocity="${radians(475)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_6" type="revolute">
@@ -209,13 +208,37 @@
       <parent link="${prefix}link_5"/>
       <child link="${prefix}link_6"/>
       <axis xyz="0 0 1"/>
-      <limit lower="-4.712389" upper="4.712389" effort="11.0" velocity="10.47" />
+      <limit lower="${radians(-270)}" upper="${radians(270)}" effort="11.0" velocity="${radians(760)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_6-tool0" type="fixed">
       <parent link="${prefix}link_6"/>
       <child link="${prefix}tool0"/>
       <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <!-- ROS-Industrial 'base' frame: base_link to Staubli World Coordinates transform -->
+    <link name="${prefix}base" />
+    <joint name="${prefix}base_link-base" type="fixed">
+      <origin xyz="0 0 0.478" rpy="0 0 0"/>
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}base"/>
+    </joint>
+
+    <!-- ROS-Industrial 'flange' frame: attachment point for EEF models -->
+    <link name="${prefix}flange" />
+    <joint name="${prefix}joint_6-flange" type="fixed">
+      <origin xyz="0 0 0" rpy="0 ${radians(-90.0)} 0" />
+      <parent link="${prefix}link_6" />
+      <child link="${prefix}flange" />
+    </joint>
+
+    <!-- ROS-Industrial 'tool0' frame: all-zeros tool frame -->
+    <link name="${prefix}tool0" />
+    <joint name="${prefix}flange-tool0" type="fixed">
+      <origin xyz="0 0 0" rpy="0 ${radians(90.0)} 0" />
+      <parent link="${prefix}flange" />
+      <child link="${prefix}tool0" />
     </joint>
   </xacro:macro>
 </robot>

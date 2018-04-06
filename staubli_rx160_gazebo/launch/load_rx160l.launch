@@ -1,4 +1,4 @@
 <?xml version="1.0"?>
 <launch>
-  <param name="robot_description" command="$(find xacro)/xacro.py '$(find staubli_rx160_gazebo)/urdf/rx160l.xacro'" />
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find staubli_rx160_gazebo)/urdf/rx160l.xacro'" />
 </launch>
