@@ -1,4 +1,5 @@
-<package>
+<?xml version="1.0"?>
+<package format="2">
   <name>staubli_experimental</name>
   <version>0.1.0</version>
   <description>Experimental packages for Staubli manipulators within ROS-Industrial (metapackage).</description>
@@ -12,10 +13,10 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <run_depend>staubli_rx160_gazebo</run_depend>
-  <run_depend>staubli_tx90_gazebo</run_depend>
-  <run_depend>staubli_tx90_support</run_depend>
-  <run_depend>staubli_val3_driver</run_depend>
+  <exec_depend>staubli_rx160_gazebo</exec_depend>
+  <exec_depend>staubli_tx90_gazebo</exec_depend>
+  <exec_depend>staubli_tx90_support</exec_depend>
+  <exec_depend>staubli_val3_driver</exec_depend>
 
   <export>
     <metapackage/>
