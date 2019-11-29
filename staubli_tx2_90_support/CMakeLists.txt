@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(staubli_tx2-90_support)
+project(staubli_tx2_90_support)
 
 find_package(catkin REQUIRED)
 
