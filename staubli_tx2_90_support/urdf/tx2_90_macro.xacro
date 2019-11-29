@@ -66,8 +66,8 @@
           <mass value="14.350897"/>
           <origin xyz="-0.000007 0.221192 0.206856" rpy="0.0 0.0 0.0"/>
           <inertia ixx="0.595207" ixy="0.000005" ixz="-0.000008"
-                                       iyy="0.625683" iyz="-0.003766"
-                                                           izz="0.059863"/>
+                                  iyy="0.625683" iyz="-0.003766"
+                                                 izz="0.059863"/>
       </inertial>
     </link>
     <link name="${prefix}link_3">
@@ -211,11 +211,6 @@
       <limit lower="${radians(-270)}" upper="${radians(270)}" effort="11.0" velocity="${radians(760)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
-    <joint name="${prefix}joint_6-tool0" type="fixed">
-      <parent link="${prefix}link_6"/>
-      <child link="${prefix}tool0"/>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-    </joint>
 
     <!-- ROS-Industrial 'base' frame: base_link to Staubli World Coordinates transform -->
     <link name="${prefix}base" />
@@ -235,5 +230,10 @@
 
     <!-- ROS-Industrial 'tool0' frame: all-zeros tool frame -->
     <link name="${prefix}tool0" />
+    <joint name="${prefix}joint_6-tool0" type="fixed">
+      <parent link="${prefix}link_6"/>
+      <child link="${prefix}tool0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
   </xacro:macro>
 </robot>
