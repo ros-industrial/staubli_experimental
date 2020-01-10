@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
-<package>
+<package format="2">
   <name>staubli_tx2_60_support</name>
   <version>0.1.0</version>
   <description>
     <p>
-      ROS-Industrial support for the Staubli TX260 (and variants).
+      ROS-Industrial support for the Staubli TX2-60 (and variants).
     </p>
     <p>
       This package contains configuration data, 3D models and launch files
-      for Staubli manipulators of the TX260 series. This includes the TX260 and the TX260L.
+      for Staubli TX2-60 manipulators. This includes the TX2-60 and the TX2-60L.
     </p>
     <p><b>Specifications</b>:</p>
     <ul>
-      <li>TX260 - Standard Arm - Nominal Speed</li>
-      <li>TX260L - Long Arm - Nominal Speed</li>
+      <li>TX2-60 - Standard Arm - Nominal Speed</li>
+      <li>TX2-60L - Long Arm - Nominal Speed</li>
     </ul>
     <p>
       Joint limits, torque limits, and maximum joint velocities are based on the
@@ -29,9 +29,9 @@
       robot model and configuration you intend to use them with.
     </p>
     <p>
-      <b>NB (1)</b>: Masses, center of mass and moments of inertia were copied from tx60 package.
-      They were calculated using Solidworks and the official Staubli CAD models, and may not be
-      accurate.
+      <b>NB (1)</b>: Masses, center of mass and moments of inertia were copied 
+      from the TX60 package. There they were calculated using Solidworks and the
+      official Staubli CAD models, and may not be accurate.
     </p>
     <p>
       <b>NB (2)</b>: In order to allow maximum torque on axis 6, effort limit on
