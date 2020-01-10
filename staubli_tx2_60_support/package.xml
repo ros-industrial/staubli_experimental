@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>staubli_tx260_support</name>
+  <name>staubli_tx2_60_support</name>
   <version>0.1.0</version>
   <description>
     <p>
@@ -44,7 +44,7 @@
   <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
   <license>Apache2.0</license>
 
-  <url type="website">http://wiki.ros.org/staubli_tx260_support</url>
+  <url type="website">http://wiki.ros.org/staubli_tx2_60_support</url>
   <url type="bugtracker">https://github.com/ros-industrial/staubli_experimental/issues</url>
   <url type="repository">https://github.com/ros-industrial/staubli_experimental</url>
 

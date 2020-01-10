@@ -1,4 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find staubli_tx260_support)/urdf/tx260l.xacro'" />
-</launch>

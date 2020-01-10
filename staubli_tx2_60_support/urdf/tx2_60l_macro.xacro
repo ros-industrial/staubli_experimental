@@ -2,20 +2,20 @@
 <robot xmlns:xacro="http://wiki.ros.org/xacro">
   <xacro:include filename="$(find staubli_resources)/urdf/common_materials.xacro"/>
 
-  <xacro:macro name="staubli_tx260l" params="prefix">
+  <xacro:macro name="staubli_tx2_60l" params="prefix">
     <!-- links: main serial chain -->
     <link name="${prefix}base_link">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx260_support/meshes/tx260/visual/base_link.stl"/>
+          <mesh filename="package://staubli_tx2_60_support/meshes/tx2_60/visual/base_link.stl"/>
         </geometry>
         <xacro:material_staubli_ral_melon_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx260_support/meshes/tx260/collision/base_link.stl"/>
+          <mesh filename="package://staubli_tx2_60_support/meshes/tx2_60/collision/base_link.stl"/>
         </geometry>
       </collision>
       <inertial>
@@ -30,14 +30,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx260_support/meshes/tx260/visual/link_1.stl"/>
+          <mesh filename="package://staubli_tx2_60_support/meshes/tx2_60/visual/link_1.stl"/>
         </geometry>
         <xacro:material_staubli_ral_melon_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx260_support/meshes/tx260/collision/link_1.stl"/>
+          <mesh filename="package://staubli_tx2_60_support/meshes/tx2_60/collision/link_1.stl"/>
         </geometry>
       </collision>
       <inertial>
@@ -52,14 +52,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx260_support/meshes/tx260l/visual/link_2.stl"/>
+          <mesh filename="package://staubli_tx2_60_support/meshes/tx2_60l/visual/link_2.stl"/>
         </geometry>
         <xacro:material_staubli_ral_melon_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx260_support/meshes/tx260l/collision/link_2.stl"/>
+          <mesh filename="package://staubli_tx2_60_support/meshes/tx2_60l/collision/link_2.stl"/>
         </geometry>
       </collision>
       <inertial>
@@ -74,14 +74,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx260_support/meshes/tx260/visual/link_3.stl"/>
+          <mesh filename="package://staubli_tx2_60_support/meshes/tx2_60/visual/link_3.stl"/>
         </geometry>
         <xacro:material_staubli_ral_melon_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx260_support/meshes/tx260/collision/link_3.stl"/>
+          <mesh filename="package://staubli_tx2_60_support/meshes/tx2_60/collision/link_3.stl"/>
         </geometry>
       </collision>
       <inertial>
@@ -96,14 +96,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx260_support/meshes/tx260l/visual/link_4.stl"/>
+          <mesh filename="package://staubli_tx2_60_support/meshes/tx2_60l/visual/link_4.stl"/>
         </geometry>
         <xacro:material_staubli_ral_melon_yellow />
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://staubli_tx260_support/meshes/tx260l/collision/link_4.stl"/>
+          <mesh filename="package://staubli_tx2_60_support/meshes/tx2_60l/collision/link_4.stl"/>
         </geometry>
       </collision>
       <inertial>
