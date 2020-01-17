@@ -16,7 +16,6 @@
   <exec_depend>staubli_rx160_gazebo</exec_depend>
   <exec_depend>staubli_tx90_gazebo</exec_depend>
   <exec_depend>staubli_tx90_support</exec_depend>
-  <exec_depend>staubli_val3_driver</exec_depend>
 
   <export>
     <metapackage/>
