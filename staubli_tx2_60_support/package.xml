@@ -29,9 +29,7 @@
       robot model and configuration you intend to use them with.
     </p>
     <p>
-      <b>NB (1)</b>: Masses, center of mass and moments of inertia were copied 
-      from the TX60 package. There they were calculated using Solidworks and the
-      official Staubli CAD models, and may not be accurate.
+      <b>NB (1)</b>: Masses, center of mass and moments of inertia are missing.
     </p>
     <p>
       <b>NB (2)</b>: In order to allow maximum torque on axis 6, effort limit on
