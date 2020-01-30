@@ -31,10 +31,6 @@
       in this package, be sure to check they are correct for the particular
       robot model and configuration you intend to use them with.
     </p>
-    <p>
-      <b>NB (1)</b>: Masses, center of mass and moments of inertia were copied from TX90 package. There they
-      were calculated using Solidworks and the official Staubli CAD models, and may not be accurate.
-    </p>
   </description>
   <author>Simon Schmeisser (isys vision)</author>
   <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>

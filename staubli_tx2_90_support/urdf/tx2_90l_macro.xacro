@@ -18,13 +18,6 @@
           <mesh filename="package://staubli_tx2_90_support/meshes/tx2_90/collision/base_link.stl"/>
         </geometry>
       </collision>
-      <inertial>
-          <mass value="10.733459"/>
-          <origin xyz="0.014288 0.000001 0.122264" rpy="0.0 0.0 0.0"/>
-          <inertia ixx="0.096590" ixy="-0.000005" ixz="-0.003803"
-                                  iyy="0.087591"  iyz="-0.000001"
-                                                  izz="0.081632"/>
-      </inertial>
     </link>
     <link name="${prefix}link_1">
       <visual>
@@ -40,13 +33,6 @@
           <mesh filename="package://staubli_tx2_90_support/meshes/tx2_90/collision/link_1.stl"/>
         </geometry>
       </collision>
-      <inertial>
-          <mass value="16.934564"/>
-          <origin xyz="0.019143 0.024764 -0.064596" rpy="0.0 0.0 0.0"/>
-          <inertia ixx="0.222318" ixy="0.016499" ixz="0.023794"
-                                  iyy="0.208959" iyz="0.031663"
-                                                 izz="0.157081"/>
-      </inertial>
     </link>
     <link name="${prefix}link_2">
       <visual>
@@ -62,13 +48,6 @@
           <mesh filename="package://staubli_tx2_90_support/meshes/tx2_90l/collision/link_2.stl"/>
         </geometry>
       </collision>
-      <inertial>
-          <mass value="14.350897"/>
-          <origin xyz="-0.000007 0.221192 0.206856" rpy="0.0 0.0 0.0"/>
-          <inertia ixx="0.595207" ixy="0.000005" ixz="-0.000008"
-                                  iyy="0.625683" iyz="-0.003766"
-                                                 izz="0.059863"/>
-      </inertial>
     </link>
     <link name="${prefix}link_3">
       <visual>
@@ -84,13 +63,6 @@
           <mesh filename="package://staubli_tx2_90_support/meshes/tx2_90/collision/link_3.stl"/>
         </geometry>
       </collision>
-      <inertial>
-          <mass value="7.501506"/>
-          <origin xyz="0.000002 0.065008 -0.071428" rpy="0.0 0.0 0.0"/>
-          <inertia ixx="0.058902" ixy="0.000000" ixz="0.000001"
-                                  iyy="0.056884" iyz="-0.003672"
-                                                 izz="0.034271"/>
-      </inertial>
     </link>
     <link name="${prefix}link_4">
       <visual>
@@ -106,13 +78,6 @@
           <mesh filename="package://staubli_tx2_90_support/meshes/tx2_90l/collision/link_4.stl"/>
         </geometry>
       </collision>
-      <inertial>
-          <mass value="6.420429"/>
-          <origin xyz="-0.001998 0.049992 0.360301" rpy="0.0 0.0 0.0"/>
-          <inertia ixx="0.103999" ixy="0.000003" ixz="-0.001379"
-                                  iyy="0.098782" iyz="-0.000007"
-                                                 izz="0.019071"/>
-      </inertial>
     </link>
     <link name="${prefix}link_5">
       <visual>
@@ -128,13 +93,6 @@
           <mesh filename="package://staubli_tx2_90_support/meshes/tx2_90/collision/link_5.stl"/>
         </geometry>
       </collision>
-      <inertial>
-          <mass value="0.568760"/>
-          <origin xyz="0.000000 0.049931 0.022823" rpy="0.0 0.0 0.0"/>
-          <inertia ixx="0.001084" ixy="0.000000" ixz="0.000000"
-                                  iyy="0.001123" iyz="0.000001"
-                                                 izz="0.000383"/>
-      </inertial>
     </link>
     <link name="${prefix}link_6">
       <visual>
@@ -150,13 +108,6 @@
           <mesh filename="package://staubli_tx2_90_support/meshes/tx2_90/collision/link_6.stl"/>
         </geometry>
       </collision>
-      <inertial>
-          <mass value="0.030977"/>
-          <origin xyz="-0.000243 0.050000 -0.206293" rpy="0.0 0.0 0.0"/>
-          <inertia ixx="0.000012" ixy="-0.000000" ixz="0.000000"
-                                  iyy="0.000011"  iyz="0.000000"
-                                                  izz="0.000022"/>
-      </inertial>
     </link>
 
     <!-- joints: main serial chain -->
