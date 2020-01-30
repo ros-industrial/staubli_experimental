@@ -127,7 +127,7 @@
       <parent link="${prefix}link_1"/>
       <child link="${prefix}link_2"/>
       <axis xyz="0 1 0"/>
-      <limit lower="${radians(-130)}" upper="${radians(147.5)}" effort="130.0" velocity="${radians(390)}" />
+      <limit lower="${radians(-130)}" upper="${radians(147.5)}" effort="166.0" velocity="${radians(400)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_3" type="revolute">
@@ -135,7 +135,7 @@
       <parent link="${prefix}link_2"/>
       <child link="${prefix}link_3"/>
       <axis xyz="0 1 0"/>
-      <limit lower="${radians(-145)}" upper="${radians(145)}" effort="65.0" velocity="${radians(420)}" />
+      <limit lower="${radians(-145)}" upper="${radians(145)}" effort="76.0" velocity="${radians(430)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_4" type="revolute">

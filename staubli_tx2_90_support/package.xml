@@ -18,10 +18,10 @@
       <li>TX2-90XL - Extra Long Arm - Nominal Speed</li>
     </ul>
     <p>
-      Joint limits were taken from broschures, torque limits, and maximum joint velocities
+      Joint limits, torque limits, and maximum joint velocities
       are based on the
-      information in the <em>Staubli Robotics - TX series 90 family -
-      Instruction Manual</em> version <em>D28082904C – 01/12/2014</em> and might have changed.
+      information in the <em>Staubli Robotics - TX2 series 90 family -
+      Instruction Manual</em> version <em>D.280.943.04-E – 12/07/2019</em>.
       All urdfs are based on the default motion and joint velocity limits,
       unless noted otherwise (ie: no support for high speed joints, extended /
       limited motion ranges or other options).
