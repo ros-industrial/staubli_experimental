@@ -118,7 +118,7 @@
       <axis xyz="0 0 1"/>
       <!-- from Staubli instruction manual:
       (1) effort limit = 318 Nm if floor mounted
-      (2) effort limit = 111 Nm if wall mounted -->
+      (2) effort limit = 10 Nm if wall mounted -->
       <!-- nominal speed limits are used -->
       <limit lower="${radians(-180)}" upper="${radians(180)}" effort="318.0" velocity="${radians(200)}" />
       <dynamics damping="0.0" friction="0.0"/>
