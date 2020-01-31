@@ -119,49 +119,48 @@
       <!-- from Staubli instruction manual:
       (1) effort limit = 318 Nm if floor mounted
       (2) effort limit = 10 Nm if wall mounted -->
-      <!-- nominal speed limits are used -->
+      <!-- nominal velocity limits are used -->
       <limit lower="${radians(-180)}" upper="${radians(180)}" effort="318.0" velocity="${radians(200)}" />
-      <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_2" type="revolute">
       <origin xyz="0.050 0 0" rpy="0 0 0"/>
       <parent link="${prefix}link_1"/>
       <child link="${prefix}link_2"/>
       <axis xyz="0 1 0"/>
+      <!-- nominal velocity limits are used -->
       <limit lower="${radians(-130)}" upper="${radians(147.5)}" effort="90.0" velocity="${radians(170)}" />
-      <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_3" type="revolute">
       <origin xyz="0 0.05 0.650" rpy="0 0 0"/>
       <parent link="${prefix}link_2"/>
       <child link="${prefix}link_3"/>
       <axis xyz="0 1 0"/>
+      <!-- nominal velocity limits are used -->
       <limit lower="${radians(-145)}" upper="${radians(145)}" effort="53.0" velocity="${radians(240)}" />
-      <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_4" type="revolute">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <parent link="${prefix}link_3"/>
       <child link="${prefix}link_4"/>
       <axis xyz="0 0 1"/>
+      <!-- nominal velocity limits are used -->
       <limit lower="${radians(-270)}" upper="${radians(270)}" effort="34.0" velocity="${radians(420)}" />
-      <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_5" type="revolute">
       <origin xyz="0 0 0.650" rpy="0 0 0"/>
       <parent link="${prefix}link_4"/>
       <child link="${prefix}link_5"/>
       <axis xyz="0 1 0"/>
+      <!-- nominal velocity limits are used -->
       <limit lower="${radians(-115)}" upper="${radians(140)}" effort="29.0" velocity="${radians(360)}" />
-      <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_6" type="revolute">
       <origin xyz="0 0 0.100" rpy="0 0 0"/>
       <parent link="${prefix}link_5"/>
       <child link="${prefix}link_6"/>
       <axis xyz="0 0 1"/>
+      <!-- nominal velocity limits are used -->
       <limit lower="${radians(-270)}" upper="${radians(270)}" effort="11.0" velocity="${radians(630)}" />
-      <dynamics damping="0.0" friction="0.0"/>
     </joint>
 
     <!-- ROS-Industrial 'base' frame: base_link to Staubli World Coordinates transform -->
@@ -182,10 +181,10 @@
 
     <!-- ROS-Industrial 'tool0' frame: all-zeros tool frame -->
     <link name="${prefix}tool0" />
-    <joint name="${prefix}joint_6-tool0" type="fixed">
-      <parent link="${prefix}link_6"/>
-      <child link="${prefix}tool0"/>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+    <joint name="${prefix}flange-tool0" type="fixed">
+      <parent link="${prefix}flange" />
+      <child link="${prefix}tool0" />
+      <origin xyz="0 0 0" rpy="0 ${radians(90.0)} 0" />
     </joint>
   </xacro:macro>
 </robot>
