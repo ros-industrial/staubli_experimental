@@ -119,7 +119,8 @@
       <!-- from Staubli instruction manual:
       (1) effort limit = 318 Nm if floor mounted
       (2) effort limit = 111 Nm if wall mounted -->
-      <limit lower="${radians(-180)}" upper="${radians(180)}" effort="318.0" velocity="${radians(400)}" />
+      <!-- nominal speed limits are used -->
+      <limit lower="${radians(-180)}" upper="${radians(180)}" effort="318.0" velocity="${radians(265)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_2" type="revolute">
@@ -127,7 +128,7 @@
       <parent link="${prefix}link_1"/>
       <child link="${prefix}link_2"/>
       <axis xyz="0 1 0"/>
-      <limit lower="${radians(-130)}" upper="${radians(147.5)}" effort="166.0" velocity="${radians(400)}" />
+      <limit lower="${radians(-130)}" upper="${radians(147.5)}" effort="166.0" velocity="${radians(210)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_3" type="revolute">
@@ -135,7 +136,7 @@
       <parent link="${prefix}link_2"/>
       <child link="${prefix}link_3"/>
       <axis xyz="0 1 0"/>
-      <limit lower="${radians(-145)}" upper="${radians(145)}" effort="76.0" velocity="${radians(430)}" />
+      <limit lower="${radians(-145)}" upper="${radians(145)}" effort="76.0" velocity="${radians(315)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_4" type="revolute">
@@ -143,7 +144,7 @@
       <parent link="${prefix}link_3"/>
       <child link="${prefix}link_4"/>
       <axis xyz="0 0 1"/>
-      <limit lower="${radians(-270)}" upper="${radians(270)}" effort="34.0" velocity="${radians(540)}" />
+      <limit lower="${radians(-270)}" upper="${radians(270)}" effort="34.0" velocity="${radians(450)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_5" type="revolute">
@@ -151,7 +152,7 @@
       <parent link="${prefix}link_4"/>
       <child link="${prefix}link_5"/>
       <axis xyz="0 1 0"/>
-      <limit lower="${radians(-115)}" upper="${radians(140)}" effort="29.0" velocity="${radians(475)}" />
+      <limit lower="${radians(-115)}" upper="${radians(140)}" effort="29.0" velocity="${radians(370)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <joint name="${prefix}joint_6" type="revolute">
@@ -159,7 +160,7 @@
       <parent link="${prefix}link_5"/>
       <child link="${prefix}link_6"/>
       <axis xyz="0 0 1"/>
-      <limit lower="${radians(-270)}" upper="${radians(270)}" effort="11.0" velocity="${radians(760)}" />
+      <limit lower="${radians(-270)}" upper="${radians(270)}" effort="11.0" velocity="${radians(630)}" />
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
 
