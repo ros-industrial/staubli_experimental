@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+  <xacro:include filename="$(find staubli_resources)/urdf/common_materials.xacro"/>
+
+  <xacro:macro name="staubli_tx2_90" params="prefix">
+    <!-- links: main serial chain -->
+    <link name="${prefix}base_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx2_90_support/meshes/tx2_90/visual/base_link.stl"/>
+        </geometry>
+        <xacro:material_staubli_ral_melon_yellow />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx2_90_support/meshes/tx2_90/collision/base_link.stl"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}link_1">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx2_90_support/meshes/tx2_90/visual/link_1.stl"/>
+        </geometry>
+        <xacro:material_staubli_ral_melon_yellow />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx2_90_support/meshes/tx2_90/collision/link_1.stl"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}link_2">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx2_90_support/meshes/tx2_90/visual/link_2.stl"/>
+        </geometry>
+        <xacro:material_staubli_ral_melon_yellow />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx2_90_support/meshes/tx2_90/collision/link_2.stl"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}link_3">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx2_90_support/meshes/tx2_90/visual/link_3.stl"/>
+        </geometry>
+        <xacro:material_staubli_ral_melon_yellow />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx2_90_support/meshes/tx2_90/collision/link_3.stl"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}link_4">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx2_90_support/meshes/tx2_90/visual/link_4.stl"/>
+        </geometry>
+        <xacro:material_staubli_ral_melon_yellow />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx2_90_support/meshes/tx2_90/collision/link_4.stl"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}link_5">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx2_90_support/meshes/tx2_90/visual/link_5.stl"/>
+        </geometry>
+        <xacro:material_staubli_ral_grey_aluminium />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx2_90_support/meshes/tx2_90/collision/link_5.stl"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}link_6">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx2_90_support/meshes/tx2_90/visual/link_6.stl"/>
+        </geometry>
+        <xacro:material_staubli_ral_grey_aluminium />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://staubli_tx2_90_support/meshes/tx2_90/collision/link_6.stl"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- joints: main serial chain -->
+    <joint name="${prefix}joint_1" type="revolute">
+      <origin xyz="0 0 0.478" rpy="0 0 0"/>
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}link_1"/>
+      <axis xyz="0 0 1"/>
+      <!-- from Staubli instruction manual:
+      (1) effort limit = 318 Nm if floor mounted
+      (2) effort limit = 111 Nm if wall mounted -->
+      <!-- nominal velocity limits are used -->
+      <limit lower="${radians(-180)}" upper="${radians(180)}" effort="318.0" velocity="${radians(265)}" />
+    </joint>
+    <joint name="${prefix}joint_2" type="revolute">
+      <origin xyz="0.050 0 0" rpy="0 0 0"/>
+      <parent link="${prefix}link_1"/>
+      <child link="${prefix}link_2"/>
+      <axis xyz="0 1 0"/>
+      <!-- nominal velocity limits are used -->
+      <limit lower="${radians(-130)}" upper="${radians(147.5)}" effort="166.0" velocity="${radians(210)}" />
+    </joint>
+    <joint name="${prefix}joint_3" type="revolute">
+      <origin xyz="0 0.05 0.425" rpy="0 0 0"/>
+      <parent link="${prefix}link_2"/>
+      <child link="${prefix}link_3"/>
+      <axis xyz="0 1 0"/>
+      <!-- nominal velocity limits are used -->
+      <limit lower="${radians(-145)}" upper="${radians(145)}" effort="76.0" velocity="${radians(315)}" />
+    </joint>
+    <joint name="${prefix}joint_4" type="revolute">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="${prefix}link_3"/>
+      <child link="${prefix}link_4"/>
+      <axis xyz="0 0 1"/>
+      <!-- nominal velocity limits are used -->
+      <limit lower="${radians(-270)}" upper="${radians(270)}" effort="34.0" velocity="${radians(450)}" />
+    </joint>
+    <joint name="${prefix}joint_5" type="revolute">
+      <origin xyz="0 0 0.425" rpy="0 0 0"/>
+      <parent link="${prefix}link_4"/>
+      <child link="${prefix}link_5"/>
+      <axis xyz="0 1 0"/>
+      <!-- nominal velocity limits are used -->
+      <limit lower="${radians(-115)}" upper="${radians(140)}" effort="29.0" velocity="${radians(370)}" />
+    </joint>
+    <joint name="${prefix}joint_6" type="revolute">
+      <origin xyz="0 0 0.100" rpy="0 0 0"/>
+      <parent link="${prefix}link_5"/>
+      <child link="${prefix}link_6"/>
+      <axis xyz="0 0 1"/>
+      <!-- nominal velocity limits are used -->
+      <limit lower="${radians(-270)}" upper="${radians(270)}" effort="11.0" velocity="${radians(630)}" />
+    </joint>
+
+    <!-- ROS-Industrial 'base' frame: base_link to Staubli World Coordinates transform -->
+    <link name="${prefix}base" />
+    <joint name="${prefix}base_link-base" type="fixed">
+      <origin xyz="0 0 0.478" rpy="0 0 0"/>
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}base"/>
+    </joint>
+
+    <!-- ROS-Industrial 'flange' frame: attachment point for EEF models -->
+    <link name="${prefix}flange" />
+    <joint name="${prefix}joint_6-flange" type="fixed">
+      <origin xyz="0 0 0" rpy="0 ${radians(-90.0)} 0" />
+      <parent link="${prefix}link_6" />
+      <child link="${prefix}flange" />
+    </joint>
+
+    <!-- ROS-Industrial 'tool0' frame: all-zeros tool frame -->
+    <link name="${prefix}tool0" />
+    <joint name="${prefix}flange-tool0" type="fixed">
+      <parent link="${prefix}flange" />
+      <child link="${prefix}tool0" />
+      <origin xyz="0 0 0" rpy="0 ${radians(90.0)} 0" />
+    </joint>
+  </xacro:macro>
+</robot>

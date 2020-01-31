@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<robot name="staubli_tx2_90xl" xmlns:xacro="http://wiki.ros.org/xacro">
+  <xacro:include filename="$(find staubli_tx2_90_support)/urdf/tx2_90xl_macro.xacro"/>
+  <xacro:staubli_tx2_90xl prefix=""/>
+</robot>

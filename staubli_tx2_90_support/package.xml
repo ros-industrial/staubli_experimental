@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>staubli_tx2_90_support</name>
+  <version>0.1.0</version>
+  <description>
+    <p>
+      ROS-Industrial support for the Staubli TX2-90 (and variants).
+    </p>
+    <p>
+      This package contains configuration data, 3D models and launch files
+      for Staubli TX2-90 manipulators. This includes the base model,
+      as well as models with extended arm and forearm links (L and XL).
+    </p>
+    <p><b>Specifications</b>:</p>
+    <ul>
+      <li>TX2-90 - Standard Arm - Nominal Speed</li>
+      <li>TX2-90L - Long Arm - Nominal Speed</li>
+      <li>TX2-90XL - Extra Long Arm - Nominal Speed</li>
+    </ul>
+    <p>
+      Joint limits, torque limits, and maximum joint velocities
+      are based on the
+      information in the <em>Staubli Robotics - TX2 series 90 family -
+      Instruction Manual</em> version <em>D.280.943.04-E – 12/07/2019</em>.
+      All urdfs are based on the default motion and joint velocity limits,
+      unless noted otherwise (ie: no support for high speed joints, extended /
+      limited motion ranges or other options).
+    </p>
+    <p>
+      Before using any of the configuration files and / or meshes included
+      in this package, be sure to check they are correct for the particular
+      robot model and configuration you intend to use them with.
+    </p>
+  </description>
+  <author>Simon Schmeisser (isys vision)</author>
+  <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
+  <license>Apache2.0</license>
+
+  <url type="website">http://wiki.ros.org/staubli_tx2_90_support</url>
+  <url type="bugtracker">https://github.com/ros-industrial/staubli_experimental/issues</url>
+  <url type="repository">https://github.com/ros-industrial/staubli_experimental</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <test_depend>roslaunch</test_depend>
+
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>rviz</exec_depend>
+  <exec_depend>staubli_resources</exec_depend>
+  <exec_depend>xacro</exec_depend>
+
+  <export>
+    <architecture_independent />
+  </export>
+</package>

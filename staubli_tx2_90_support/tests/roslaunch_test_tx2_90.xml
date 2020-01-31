@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+  <group ns="load_tx2_90__">
+    <include file="$(find staubli_tx2_90_support)/launch/load_tx2_90.launch"/>
+  </group>
+
+  <group ns="test_tx2_90__">
+    <include file="$(find staubli_tx2_90_support)/launch/test_tx2_90.launch"/>
+  </group>
+
+</launch>
