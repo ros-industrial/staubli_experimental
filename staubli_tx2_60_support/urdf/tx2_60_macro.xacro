@@ -119,6 +119,7 @@
       <!-- from Staubli instruction manual:
       (1) effort limit = 126 Nm if floor mounted
       (2) effort limit = 40 Nm if wall mounted -->
+      <!-- nominal velocity limits are used -->
       <limit lower="${radians(-180)}" upper="${radians(180)}" effort="126.0" velocity="${radians(435)}" />
     </joint>
     <joint name="${prefix}joint_2" type="revolute">
@@ -126,6 +127,7 @@
       <parent link="${prefix}link_1"/>
       <child link="${prefix}link_2"/>
       <axis xyz="0 1 0"/>
+      <!-- nominal velocity limits are used -->
       <limit lower="${radians(-127.5)}" upper="${radians(127.5)}" effort="47.0" velocity="${radians(385)}" />
     </joint>
     <joint name="${prefix}joint_3" type="revolute">
@@ -133,6 +135,7 @@
       <parent link="${prefix}link_2"/>
       <child link="${prefix}link_3"/>
       <axis xyz="0 1 0"/>
+      <!-- nominal velocity limits are used -->
       <limit lower="${radians(-152.5)}" upper="${radians(152.5)}" effort="32.0" velocity="${radians(500)}" />
     </joint>
     <joint name="${prefix}joint_4" type="revolute">
@@ -140,6 +143,7 @@
       <parent link="${prefix}link_3"/>
       <child link="${prefix}link_4"/>
       <axis xyz="0 0 1"/>
+      <!-- nominal velocity limits are used -->
       <limit lower="${radians(-270.0)}" upper="${radians(270.0)}" effort="7.0" velocity="${radians(995)}" />
     </joint>
     <joint name="${prefix}joint_5" type="revolute">
@@ -147,6 +151,7 @@
       <parent link="${prefix}link_4"/>
       <child link="${prefix}link_5"/>
       <axis xyz="0 1 0"/>
+      <!-- nominal velocity limits are used -->
       <limit lower="${radians(-121.0)}" upper="${radians(132.5)}" effort="8.0" velocity="${radians(1065)}" />
     </joint>
     <joint name="${prefix}joint_6" type="revolute">
@@ -154,6 +159,7 @@
       <parent link="${prefix}link_5"/>
       <child link="${prefix}link_6"/>
       <axis xyz="0 0 1"/>
+      <!-- nominal velocity limits are used -->
       <limit lower="${radians(-270.0)}" upper="${radians(270.0)}" effort="2.0" velocity="${radians(1445)}" />
     </joint>
 
