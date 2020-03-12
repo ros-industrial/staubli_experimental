@@ -6,6 +6,11 @@ Experimental packages for Staubli manipulators within [ROS-Industrial][].
 See the [ROS wiki][] page for more information.
 
 
+## VAL 3 driver
+
+Note: the `staubli_val3_driver` package has been split off into its own repository (in [staubli_experimental#47](https://github.com/ros-industrial/staubli_experimental/pull/47)). Its new location is: [ros-industrial/staubli_val3_driver](https://github.com/ros-industrial/staubli_val3_driver).
+
+
 ## Contents
 
 This repository contains packages that will be migrated to the [staubli][]
