@@ -4,7 +4,7 @@
   <version>0.1.0</version>
   <description>
     <p>
-      ROS-Industrial Gazebo support package for the Staubli TX60 (and variants).
+      ROS-Industrial Gazebo support package for the Staubli TX260 (and variants).
     </p>
     <p>
       This package contains the configuration data and launch files required
@@ -16,7 +16,7 @@
       configuration you intend to use them with.
     </p>
   </description>
-  <author>Nils Melchert (Leibniz University Hannover)</author>
+  <author>Fetullah Atas</author>
   <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
   <license>Apache2.0</license>
 
@@ -26,17 +26,13 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <exec_depend>gazebo</exec_depend>
   <exec_depend>gazebo_ros</exec_depend>
   <exec_depend>gazebo_ros_control</exec_depend>
   <exec_depend>gazebo_ros_pkgs</exec_depend>
   <exec_depend>joint_state_controller</exec_depend>
   <exec_depend>joint_trajectory_controller</exec_depend>
   <exec_depend>position_controllers</exec_depend>
-  <exec_depend>robot_state_publisher</exec_depend>
-  <exec_depend>staubli_resources</exec_depend>
-  <exec_depend>staubli_tx2_60_support</exec_depend>
-  <build_depend>staubli_tx2_60_support</build_depend>
+
 
   <export>
     <architecture_independent />
