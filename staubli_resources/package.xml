@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>staubli_resources</name>
+  <version>0.1.0</version>
+  <description>
+    <p>
+      Shared configuration data, 3D models and launch files for Staubli
+      manipulators.
+    </p>
+    <p>
+      This package contains configuration data, 3D models and launch files
+      that are shared between different Staubli robot support packages
+      within the ROS-Industrial program.
+
+      This package also contains common urdf / xacro resources used by
+      other Staubli related packages.
+    </p>
+  </description>
+  <author>G.A. vd. Hoorn (TU Delft Robotics Institute)</author>
+  <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
+  <license>Apache2.0</license>
+
+  <url type="website">http://ros.org/wiki/staubli_resources</url>
+  <url type="bugtracker">https://github.com/ros-industrial/staubli/issues</url>
+  <url type="repository">https://github.com/ros-industrial/staubli</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+    <architecture_independent />
+  </export>
+</package>
