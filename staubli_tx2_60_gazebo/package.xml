@@ -8,7 +8,7 @@
     </p>
     <p>
       This package contains the configuration data and launch files required
-      to simulate the Staubli TX60 and the Staubli TX60L manipulator in Gazebo.
+      to simulate the Staubli TX2-60 manipulator in Gazebo.
     </p>
     <p>
       Before using any of the configuration files included in this package, be
@@ -32,8 +32,9 @@
   <exec_depend>joint_state_controller</exec_depend>
   <exec_depend>joint_trajectory_controller</exec_depend>
   <exec_depend>position_controllers</exec_depend>
-
-
+  <exec_depend>ros_controllers</exec_depend>
+  <exec_depend>staubli_resources</exec_depend>
+  <exec_depend>staubli_tx2_60_support</exec_depend>
   <export>
     <architecture_independent />
   </export>
