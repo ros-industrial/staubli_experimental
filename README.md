@@ -1,5 +1,8 @@
 # Staubli experimental
 
+[![Build Status: Ubuntu Bionic (Actions)](https://github.com/ros-industrial/staubli_experimental/workflows/CI%20-%20Ubuntu%20Bionic/badge.svg?branch=kinetic-devel)](https://github.com/ros-industrial/staubli_experimental/actions?query=workflow%3A%22CI+-+Ubuntu+Bionic%22)
+[![Build Status: Ubuntu Focal (Actions)](https://github.com/ros-industrial/staubli_experimental/workflows/CI%20-%20Ubuntu%20Focal/badge.svg?branch=kinetic-devel)](https://github.com/ros-industrial/staubli_experimental/actions?query=workflow%3A%22CI+-+Ubuntu+Focal%22)
+
 [![support level: community](https://img.shields.io/badge/support%20level-community-lightgray.png)](http://rosindustrial.org/news/2016/10/7/better-supporting-a-growing-ros-industrial-software-platform)
 
 Experimental packages for Staubli manipulators within [ROS-Industrial][].
